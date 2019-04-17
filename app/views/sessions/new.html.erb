@@ -1,0 +1,35 @@
+<% if @error %>
+<p><%=@error%></p>
+<% end %>
+<article class="bigger-container">
+  <div class="big-container">
+    <div class="form-container">
+      <h1 class="logo">Instafam</h1>
+        <div class="small-form-container">
+<%= form_tag "/sessions", :class => 'form',  method: :post do  %>
+    <div class="contain">
+    <div class="logname">
+    <%= label_tag "Username" %>
+    </div>
+    <%= text_field_tag :username, nil, class: "", required: true %>
+  
+    <div class="pass">
+    <%= label_tag "Password" %>
+    </div>
+    <%= password_field_tag :password, nil, required: true %>
+    
+
+    <div class="btn">
+    <%= submit_tag  "Log In"%> 
+  </div>
+   <h6>OR</h6>
+  <div class="signup">
+  <%= link_to 'Sign Up'.html_safe, new_user_path %>  
+
+  </div>
+   
+    <% end %>
+    </div>
+    </div>
+  </div>
+</article>

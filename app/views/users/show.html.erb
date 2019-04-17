@@ -1,0 +1,26 @@
+<header>
+  <div id ="header-container">
+      <div id="title-user" class="title"><%= @user.username %></div>
+    <div id="button-container">
+      <button><%= link_to "Log Out", logout_path, :class => 'loglink' %></button>
+      <button><%= link_to "New Album", new_user_album_path(@user.id), :class => 'link'%></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<h1 class="albums-head">Albums</h1>
+<div class="container-all-albums">
+<% if @user.albums %>
+  <% @user.albums.each do |album| %>
+    <%= link_to album.title, user_album_path(@user.id, album), :class => 'album-link' %>
+
+
+<% end %>
+
+  
+
+<% end %>
+
+</div>
+</main>

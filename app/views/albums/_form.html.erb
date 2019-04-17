@@ -1,0 +1,9 @@
+<%= form_for @photo, url: {action: "create"}, html: {class: "photoform"} do |f| %>
+ 
+  <p>
+    <%= f.file_field :pictures %>
+  </p>
+
+  <p> <%=f.submit %></>
+
+  <% end %>

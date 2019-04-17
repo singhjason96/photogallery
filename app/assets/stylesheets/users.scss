@@ -1,0 +1,117 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+   margin: 0;
+}
+header {
+   position: relative;
+   width: 100%;
+   height: 60px;
+   background-color: #3497db;
+}
+
+#header-container {
+  position: relative;
+   width: 1200px;
+   height: 60px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #3497db;
+}
+
+.formHeader {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 935px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+    position: relative;
+    
+}
+
+input[type=text] {
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  width: 100%;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.username {
+    font-family: 'Roboto', sans-serif;
+}
+ .firstname {
+    font-family: 'Roboto', sans-serif;
+ }
+ .lastname {
+    font-family: 'Roboto', sans-serif;
+ }
+ .email {
+    font-family: 'Roboto', sans-serif;
+ }
+ .password {
+    font-family: 'Roboto', sans-serif;
+ }
+
+ #title-user {
+   top: 12px;
+   float: left;
+ }
+
+ .title {
+   position: relative;
+   font-family: 'Roboto', sans-serif;
+   color: #ffffff;
+   font-size: 35px;
+   margin-bottom: 20px;
+ }
+
+ #button-container {
+   position: relative;
+   top: 8px;
+   float: right;
+   margin-bottom: 20px;
+ }
+
+ button {
+   background-color: #52a7e0; 
+   color: black;
+   border: none;
+   padding: 10px 22px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+ .albums-head {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+ }

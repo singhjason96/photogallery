@@ -1,0 +1,16 @@
+<header>
+  <div id ="header-container">
+      <div id="title-album" class="title"><%= @album.title %></div>
+    <div id="button-container">
+      <button><%= link_to "Log Out", logout_path, :class => 'loglink' %></button>
+      <button><%= link_to "Add Photos", new_user_album_photo_path(params:user_id, params:id), :class => 'link'%></button>
+    </div>
+  </div>
+</header>
+<% if @album.photos %>
+  <% @album.photos.each do |photo| %>
+    <img src="<%= photo.picture %>" class="card-img-top" alt="...">
+    <%end%>
+<% end %>
+
+

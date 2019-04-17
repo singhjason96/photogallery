@@ -1,0 +1,14 @@
+
+<div class="new-album-conatiner">
+<h1 class="new-album-title">Add A New Album</h1>
+  <div class="album-form-container">
+<%= form_for @album, url: {action: "create"}, html: {:multipart => true} do |f| %>
+  <div class="Title-Tag">
+    <%= label_tag "Make A Title" %>
+    </div>
+    <%= f.text_field :title, placeholder: "Title" %>
+ 
+    <%= f.submit "Create Album" %>
+  <% end %>
+  </div>
+</div>  
