@@ -1,6 +1,5 @@
 class PhotosController < ApplicationController
     def new
-        @album = Album.find(params[:id])
         @photo = Photo.new
       end
     
@@ -19,7 +18,7 @@ class PhotosController < ApplicationController
         @photo.album_id = params[:album_id]
          if @photo.valid? 
           @photo.save 
-          redirect_to "/users/#{params[:user_id]}/albums/#{@album.id}/photos/#{@photo.id}"
+          redirect_to "/users/#{params[:user_id]}/albums/#{params[:album_id]}"
          else
           render 'new'
          end

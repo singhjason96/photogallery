@@ -56,3 +56,44 @@
 .album-link {
     font-size: 20px;
 }
+
+#title-album {
+    top: 12px;
+    float: left;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.column {
+  width: 500px;
+  height: 500px;
+}
+
+.felx-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  
+  .felx-grid > .column {
+    flex-grow: 1;
+    flex: 1 1 30%;
+    justify-content: center;
+  }
+
+  @media (max-width: 800px) {
+    .flex-grid > .column {
+      flex-grow: 1;
+      flex: 1 1 100%;
+      justify-content: center;
+    }
+  
+  
+  
+  }

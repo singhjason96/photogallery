@@ -1,4 +1,11 @@
-<%= form_for @photo, :url => user_album_photos_path, :html => { :multipart => true } do |form| %>    
+
+<div class="container-form">  
+<h1 class="choose-pic">Choose A Picture</h1>
+  <div class="new-picture">
+<%= form_for @photo, :url => user_album_photos_path, :html => { :multipart => true } do |form| %> 
     <%= form.file_field :picture %>
     <%= form.submit %>
+    </div>
   <% end %>
+  </div>
+

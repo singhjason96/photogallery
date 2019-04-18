@@ -1,3 +1,44 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container-form {
+   
+}
+
+.choose-pic {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.new-picture {
+    margin: 0 auto;
+    max-width: 935px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+    position: relative;
+}
+
+input#photo_picture{
+    background-color: #52a7e0; 
+    color: black;
+    border: none;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
