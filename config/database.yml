@@ -7,7 +7,10 @@
 default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['POSTGRES_USER'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   timeout: 5000
+  host: <%= ENV['POSTGRES_HOST'] %>
 
 development:
   <<: *default
@@ -22,4 +25,4 @@ test:
 
 production:
   <<: *default
-  database: db/production.pg
+  database: db/production.sqlite3

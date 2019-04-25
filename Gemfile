@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'paperclip', '~> 6.1'
 gem 'rmagick', '~> 3.0'
 gem 'carrierwave', '~> 0.11.2'
+gem 'rails_12factor', group: :production
 
 
 
