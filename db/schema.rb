@@ -37,10 +37,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_230018) do
     t.string "last_name"
     t.string "email"
     t.string "password"
-    t.integer "album_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["album_id"], name: "index_users_on_album_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end
