@@ -6,29 +6,34 @@
       <div class="username">
     <%= label_tag "Username" %>
     </div>
-      <%= f.text_field :username, placeholder: "Username" %><br>
+      <%= f.text_field :username, placeholder: "Create a Username" %><br>
 
       <div class="firstname">
       <%=label_tag "First Name" %>
       </div>
-      <%= f.text_field :first_name, placeholder: "First Name" %> <br>
+      <%= f.text_field :first_name, placeholder: "Enter Your First Name" %> <br>
 
       <div class="lastname">
       <%= label_tag "Last Name" %>
       </div>
-      <%= f.text_field :last_name, placeholder: "Last Name" %><br>
+      <%= f.text_field :last_name, placeholder: "Enter Your Last Name" %><br>
 
       <div class="Email">
       <%= label_tag "Email"%>
       </div>
-      <%= f.text_field :email, placeholder: "Email" %><br>
+      <%= f.text_field :email, placeholder: "Enter an Email" %><br>
 
       <div class="password">
       <%= label_tag "Password" %>
       </div>
-      
+      <%= f.password_field :password, placeholder: "Enter a Password" %><br>
 
-      <%= f.password_field :password, placeholder: "Password" %><br>
+      <div class="password">
+      <%= label_tag "Confirm Password" %>
+      </div>
+      <%= f.password_field :password_confirmation, placeholder: "Confirm your password" %>
+
+
       <%= f.submit "Create Account" %><br>
     <% end %>
     </div>
